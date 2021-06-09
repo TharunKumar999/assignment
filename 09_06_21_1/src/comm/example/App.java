@@ -7,7 +7,12 @@ public class App {
 		account.createAccount("acc-1", 200.0, "John", AccountType.SAVINGS);
 		if(account.getAccountType()==AccountType.SAVINGS)
 		{
+			System.out.println("Savings Account");
 			
+		}
+		else
+		{
+			System.out.println("Current Account");
 		}
 	}
 
