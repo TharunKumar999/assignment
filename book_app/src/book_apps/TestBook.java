@@ -1,5 +1,8 @@
 package book_apps;
 
+import book_app.Book;
+import book_app.EBook;
+
 public class TestBook
 {​​​​​​​​
 	public static void main(String[] args){​​​​​​​​                  // Main Method - Only this method gets executed

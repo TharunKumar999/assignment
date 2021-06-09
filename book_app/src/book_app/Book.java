@@ -2,9 +2,10 @@ package book_app;
 public class Book {
 	   private String authorName;
 	   private double costPrice;
-	   private double salePrice;
-	   private String title;
-	   private int pages;
+	   public double salePrice;
+	   public String title;
+	   public int pages;
+	public String author;
 
 	   public Book() {
 
