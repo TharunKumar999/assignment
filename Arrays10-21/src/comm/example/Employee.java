@@ -45,6 +45,6 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
-				+ email + " Employee Type= "+employeeType +"]";
+				+ email + " Employee Type= "+employeeType.getMessage() +"]";
 	}
 }
