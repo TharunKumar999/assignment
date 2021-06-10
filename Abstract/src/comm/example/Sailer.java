@@ -1,5 +1,7 @@
 package comm.example;
 
-public class Sailer {
+	public interface Sailer {
+		public void dock();
+
 
 }
