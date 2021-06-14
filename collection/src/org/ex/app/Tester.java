@@ -47,6 +47,14 @@ public class Tester {
 					switch (choice) {
 					case 1:
 						System.out.print("Beer Name: ");
+						char ch=scanner.next().charAt(0);
+						if(ch<=5)
+						{
+							System.out.println("not Acceptable");
+							break;
+						}
+						
+						
 						String name=scanner.next();
 						System.out.print("Beer Price: ");
 						double price=scanner.nextDouble();
