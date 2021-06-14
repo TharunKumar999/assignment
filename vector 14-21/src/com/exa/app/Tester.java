@@ -14,7 +14,7 @@ import com.exa.Todo;
 public class Tester {
 	private static Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Desccomparator desccomparator = new Desccomparator();
 		PriorityComparator priorityComparator = new PriorityComparator();
 		Set<Todo> set = new TreeSet<Todo>(priorityComparator);
@@ -53,12 +53,18 @@ public class Tester {
 		try {
 			  // block of code that can throw exceptions
 			} catch (Exception ex) {
-			  // Exception handler
+			   Exception handler;
 			}
+		
 		System.out.println(" enter the id: ");
 		id = scanner.next();
 		set.add(todo);
 		System.out.println("Added.");
+		for (Todo t : set) {
+			System.out.println(t);
+		
 	}
+		
+}
 }
 
