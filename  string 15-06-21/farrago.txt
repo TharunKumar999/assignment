@@ -1,4 +1,3 @@
-anatomy
 animation
 applet
 application
