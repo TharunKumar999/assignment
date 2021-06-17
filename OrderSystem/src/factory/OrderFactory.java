@@ -41,19 +41,24 @@ public class OrderFactory {
 		}
 
 	}
-
-	public void saveOrder(List<Order> list) throws IOException {
+	
+	public void saveOrder(List<Order> list) throws IOException 
+	 {
 		objectOutputStream.writeObject(list);
 		System.out.println("Order Saved Sucessfully.!");
-		//objectInputStream.close();
+		objectInputStream.close();
 	}
+		
+	
+
+	 
 
 	public List<Order> displayAllOrders() throws ClassNotFoundException, IOException {
 		fileInputStream = new FileInputStream(file);
 		objectInputStream = new ObjectInputStream(fileInputStream);
 		List<Order> orders = (List<Order>) objectInputStream.readObject();
-	//	System.out.println(orders);
-		//objectOutputStream.close();
+		System.out.println(orders);
+		objectOutputStream.close();
 		return orders;
 	}
 
