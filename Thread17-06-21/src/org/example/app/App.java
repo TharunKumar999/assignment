@@ -25,6 +25,7 @@ public class App {
 			System.out.println("2. display all available employees");
 			System.out.println("3. find employee by id");
 			System.out.println("4. update employee by id");
+			System.out.println("5. delete employee by id");
 			System.out.println("0. exit");
 			System.out.print("enter your choice: ");
 			choice = Integer.parseInt(bufferedReader.readLine());
