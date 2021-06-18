@@ -69,6 +69,12 @@ public class App {
 				employee=service.updateEmployee(id);
 				System.out.println("Updated Employee:\n"+employee);
 				break;
+			case 5:
+				System.out.print("enter id: ");
+				id = Integer.parseInt(bufferedReader.readLine());
+				employee=service.deleteEmployee(id);
+				System.out.println("deleted Employee:\n"+employee);
+				break;
 			case 0:
 				System.out.println("Bye!");
 				System.exit(0);

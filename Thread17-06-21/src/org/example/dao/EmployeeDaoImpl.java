@@ -94,5 +94,26 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		employee.setEmail(email);
 		return employee;
 	}
+
+
+	@Override
+	public Employee deleteEmployee(Integer id) throws SQLException, EmployeeNotFoundException {
+		list = new ArrayList<Employee>();
+		PreparedStatement preparedStatement = connection.prepareStatement("delete from employee where id=?");
+		preparedStatement.setInt(1, id);
+		ResultSet resultSet = preparedStatement.executeQuery();
+		while (resultSet.next()) {
+			list.add(new Employee(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3),
+					resultSet.getString(4)));
+
+		}
+		return null;
+	}
+
+	@Override
+	public List<Employee> deleteId(Integer id) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 

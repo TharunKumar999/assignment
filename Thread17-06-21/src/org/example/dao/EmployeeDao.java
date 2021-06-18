@@ -14,5 +14,7 @@ public interface EmployeeDao {
 	public List<Employee> findById(Integer id)throws SQLException;
 	
 	public Employee updateEmployee(Integer id)throws SQLException,EmployeeNotFoundException;
+	public Employee deleteEmployee(Integer id)throws SQLException,EmployeeNotFoundException;
 
+	List<Employee> deleteId(Integer id) throws SQLException;
 }

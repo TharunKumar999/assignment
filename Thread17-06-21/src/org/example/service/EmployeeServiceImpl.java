@@ -45,4 +45,15 @@ public class EmployeeServiceImpl implements EmployeeService{
 		}
 		return employee;
 	}
+	@Override
+	public Employee deleteEmployee(Integer id) throws SQLException {
+		// TODO Auto-generated method stub
+		Employee employee=null;
+		try {
+			employee=employeeDao.deleteEmployee(id);
+		} catch (SQLException | EmployeeNotFoundException e) {
+			System.err.println(e.getMessage());
+		}
+		return employee;
+}
 }
