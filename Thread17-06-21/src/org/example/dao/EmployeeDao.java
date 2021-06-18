@@ -1,4 +1,5 @@
 package org.example.dao;
+
 import java.sql.SQLException;
 import java.util.List;
 
@@ -11,5 +12,7 @@ public interface EmployeeDao {
 	public List<Employee> getAllEmployees()throws SQLException;
 	
 	public List<Employee> findById(Integer id)throws SQLException;
+	
+	public Employee updateEmployee(Integer id)throws SQLException,EmployeeNotFoundException;
 
 }
