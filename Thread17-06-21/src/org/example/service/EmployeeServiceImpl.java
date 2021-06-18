@@ -26,5 +26,11 @@ public class EmployeeServiceImpl implements EmployeeService{
 		// TODO Auto-generated method stub
 		return employeeDao.getAllEmployees();
 	}
+
+	@Override
+	public List<Employee> findById(Integer id) throws SQLException {
+		
+		return employeeDao.findById(id);
+	}
 	
 }
