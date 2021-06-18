@@ -11,7 +11,7 @@ public class MyConnectionFactory {
 	
 	private MyConnectionFactory() throws SQLException
 	{
-		connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/hr","root","rot");
+		connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/hr","root","root");
 	}
 	
 	
@@ -29,3 +29,4 @@ public class MyConnectionFactory {
 		return connection;
 	}
 }
+
