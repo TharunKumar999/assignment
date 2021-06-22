@@ -1,13 +1,8 @@
 package org.example.hibernate_crud_demo.factory;
-
 import java.util.Properties;
-
 import org.example.hibernate_crud_demo.model.Employee;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-
-
 public class MySessionFactory {
 
 	private static MySessionFactory mySessionFactory;
@@ -17,9 +12,9 @@ public class MySessionFactory {
 	private MySessionFactory() {
 		properties=new Properties();
 		properties.put("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
-		properties.put("hibernate.connection.password", "root");
+		properties.put("hibernate.connection.password", "pass1");
 		properties.put("hibernate.connection.url", "jdbc:mysql://localhost: 3306/hr");
-		properties.put("hibernate.connection.username","root");
+		properties.put("hibernate.connection.username","user1");
 		properties.put("hibernate.default_schema", "hr");
 		//properties.put("hibernate.current_session_context_class", "thread");
 
