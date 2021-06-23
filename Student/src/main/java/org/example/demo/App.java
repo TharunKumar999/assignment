@@ -1,4 +1,4 @@
-package org.example.demo.app;
+package org.example.demo;
 
 	import java.util.Set;
 	import java.util.logging.Logger;

@@ -1,8 +1,6 @@
 package org.example.employee;
 
 
-import java.util.Random;
-
 import org.example.demo.model.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
