@@ -1,4 +1,4 @@
-package hibernateexample.hibernate.mapping;
+package comm.app;
 
 import java.util.logging.Logger;
 
@@ -7,11 +7,6 @@ import org.example.demo.model.InstructorDetails;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-/**
- * Hello world!
- *
- */
 
 public class App {
 	public static void main(String[] args) {
@@ -63,4 +58,3 @@ public class App {
 		}
 	}
 }
- 
