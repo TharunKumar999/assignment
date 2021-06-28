@@ -12,5 +12,13 @@ public interface BookDao {
 	public Book createBook(Book book) throws SQLException;
 	
 	public List<Book> displayAllBook() throws SQLException;
+	
+	public List<Book> findBookById(Integer id)throws SQLException;
+	
+	public List<Book> updateBookById(Book book)throws SQLException;
+
+	Book updateBook(Book book) throws SQLException;
+
+	public List<Book> updateBookById(Integer id);
 
 }

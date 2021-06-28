@@ -30,4 +30,16 @@ public class BookServiceImpl implements BookService {
 		// TODO Auto-generated method stub
 		return bookDaoImpl.displayAllBook();
 	}
+
+	@Override
+	public List<Book> findBookById(Integer id) throws SQLException {
+		// TODO Auto-generated method stub
+		return bookDaoImpl.findBookById(id);
+	}
+	@Override
+	
+	public List<Book> updateBookById(Integer id) throws SQLException {
+		// TODO Auto-generated method stub
+		return bookDaoImpl.updateBookById(id);
+	}
 }
